@@ -6,7 +6,7 @@ function PagInicio() {
   const navigate = useNavigate();
   const registroURL = "/registro";
 
-  return (
+  return (<>
     <div className="bg-gradient-to-r from-purple-900 to-black min-h-screen flex flex-col items-center justify-center text-white font-sans relative">
       {}
       <header className="absolute top-4 left-4 right-4 flex justify-between items-center w-full">
@@ -27,11 +27,12 @@ function PagInicio() {
         <button
           onClick={() => navigate(registroURL)}
           className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-full text-lg font-medium transition duration-300"
-        >
+          >
           REGISTRARME
         </button>
       </main>
     </div>
+          </>
   );
 }
 
