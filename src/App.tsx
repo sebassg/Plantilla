@@ -2,8 +2,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
 import PagInicio from './componentes/PagInicio';
-import Servicios from './componentes/servicios';
+import Service from "./componentes/Service"
 import Nosotros from './componentes/Nosotros'; 
+import Contact from './componentes/Contact';
 
 
 function App() {
@@ -12,11 +13,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/inicio" element={<PagInicio />} />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="/nosotros" element={<Nosotros />} /> {}
+        <Route path="/servicios" element={<Service />} />
+        <Route path="/nosotros" element={<Nosotros />} /> 
+        <Route path="/Contactanos" element={<Contact />} /> 
       </Routes>
     </Router>
+  
   </>
+  
   );
 }
 
