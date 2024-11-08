@@ -1,15 +1,16 @@
-import './App.css'
-
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './index.css'
+import PagInicio from './componentes/PagInicio';
 function App() {
-
-
   return (
-    <>
-    <div className="text-center bg-blue-500 text-white p-6">
-      <h1 className="text-4xl font-bold">Hello, Tailwind with TypeScript!</h1>
-    </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/inicio" element={<PagInicio />} />
+        <Route path="/servicios" element={<se/>} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
